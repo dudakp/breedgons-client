@@ -1,0 +1,13 @@
+{
+  "appId": "sk.dudak.breedgons",
+  "appName": "breedgons-client",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}

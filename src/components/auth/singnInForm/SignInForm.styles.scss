@@ -1,0 +1,35 @@
+.login-box {
+    max-width: 25rem;
+    background-color: #b08ee960 !important;
+}
+
+.input-mail,
+.input-password,
+.button-login {
+    border-radius: 5rem !important;
+    background-color: #d4858540 !important;
+    border: none !important;
+}
+
+.input-mail,
+.input-password {
+    box-shadow: none;
+    text-shadow: none;
+}
+
+.button-login {
+    margin: 2rem 0 2rem 0;
+    width: 55%;
+}
+
+.button-forgot-password {
+    font-size: 0.75rem;
+}
+
+.button-forgot-password:hover {
+    background-color: unset !important;
+}
+
+.title-logo {
+    margin: 3.5rem 0 3.5rem 0;
+}
