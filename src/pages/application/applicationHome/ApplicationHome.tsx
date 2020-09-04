@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useOktaAuth } from '@okta/okta-react';
 import { NavBar } from '../../../components/common/navbar/NavBar';
 import { useRecoilState, useRecoilValue } from 'recoil';
@@ -8,7 +8,6 @@ export default () => {
   const { authState, authService } = useOktaAuth();
   const [page, setPage] = useRecoilState(navBarAtom);
   // const page = useRecoilValue(navbarSelector);
-
 
   if (authState.isPending) {
     return <div>Loading...</div>;
