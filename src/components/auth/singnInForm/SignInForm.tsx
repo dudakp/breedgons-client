@@ -2,12 +2,15 @@ import React, { useState } from 'react';
 import { SignInFormProps } from './SignInForm.types'
 import { useAuth } from '../../../hooks/AuthHooks';
 import './SignInForm.styles.scss';
+import { useHistory } from 'react-router-dom';
 
 export const SignInForm: React.FC<SignInFormProps> = (props) => {
+  const { issuer } = props;
+
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
-  const { issuer } = props;
   const [handleSubmit, sessionToken] = useAuth();
+  
 
   const handleUsernameChange = (e: any) => {
     setUsername(e.target.value);

@@ -8,7 +8,7 @@ export const SignIn: React.FC<any> = (props: any) => {
     const { authState } = useOktaAuth();
 
     return authState.isAuthenticated
-        ? <Redirect to={{ pathname: '/' }} />
+        ? <Redirect to={{ pathname: '/home' }} />
         :
         <div className="columns is-centered is-vcentered is-mobile">
             <div className="column is-narrow has-text-centered sign-in">

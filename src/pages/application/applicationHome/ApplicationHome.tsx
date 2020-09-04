@@ -1,8 +1,7 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import { useOktaAuth } from '@okta/okta-react';
-import { NavBar } from '../../../components/common/navbar/NavBar';
-import { useRecoilState, useRecoilValue } from 'recoil';
-import { navBarAtom, navbarSelector } from '../../../state/atoms';
+import { useRecoilState } from 'recoil';
+import { navBarAtom } from '../../../state/atoms';
 
 export default () => {
   const { authState, authService } = useOktaAuth();
@@ -14,9 +13,6 @@ export default () => {
   }
 
   return (
-    <>
-      {/* <NavBar></NavBar> */}
-      <h1 className='title'>{page.page}</h1>
-    </>
+    <h1 className='title'> Please log in </h1>
   );
 }; 
